@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.signIn{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    gap: 15vh;
+    min-height: 100vh;
+}
+.signIn__containts{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+}
+.signIn > h1{
+    color: #4081ec;
+}
+.signIn__containts > h2{
+    border-bottom: 2px solid #4081ec;
+    padding-bottom:5px;
+}
+
+.signIn__button{
+    display:flex;
+    background-color: #4081ec;
+    height: 45px;
+    align-items:center;
+    padding-right: 10px;
+    padding-left: 2.5px;
+    border-radius:2px;
+}
+.logo {
+    width: 40px;
+    height: 40px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    background-color:white;
+}
+.logo > img{
+    width:30px;
+}
+.signIn__button button{
+    border: none;
+    height: 40px;
+    background-color:#4081ec;
+    cursor: pointer;
+    font-size:18px;
+    margin-left: 5px;
+    color: white;
+}
+
+/* Style weights */
+.weights{
+    margin: 0 10vh;
+}
+.header{
+    display:flex;
+    justify-content:space-between;
+    margin-top:10px;
+}
+.header__left{
+    display:flex;
+    align-items:center;
+    gap: 5px;
+}
+.header__left > img{
+    width: 35px;
+    border-radius: 50%;
+}
+.header__right > button{
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding:8px 15px;
+    background-color: #4081ec;
+    border-radius:3px;
+}
+
+/* Style form */
+.form{
+    display:flex;
+    justify-content:center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+form{
+    display:flex;
+    gap: 10px;
+}
+form > input{
+    height: 35px;
+    width:300px;
+    padding: 0 5px;
+    font-size: 18px;
+}
+
+form > button{
+    height: 35px;
+    padding:5px 10px;
+    border: 1px solid #4081ec;
+    cursor: pointer;
+}
+
+/* Weight styling */
+.allWeights{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.weight__item{
+    width: 350px;
+    background-color:#c7dafa;
+    padding:10px;
+    border-radius:2px;
+    margin-bottom:20px;
+}
+.weight__ItemUp{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.weight__ItemUp > button{
+    padding: 3px 8px;
+    border: none;
+    background-color:rgb(241, 45, 45);
+    color: white;
+    cursor: pointer;
+}

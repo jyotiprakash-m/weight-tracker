@@ -1,8 +1,11 @@
 import React from 'react';
+import Weights from './components/Weights'
+import SignIn from './components/SignIn'
 function App() {
+  const user = "ramu";
   return (
-    <div className="App">
-
+    <div className="app">
+      {user ? <Weights /> : <SignIn />}
     </div>
   );
 }
