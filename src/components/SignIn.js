@@ -1,6 +1,7 @@
 import React from 'react'
-
-function SignIn() {
+import firebase from "../firebase"
+function SignIn({ auth }) {
+    const signInWithGoogle = () => auth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
     return (
         <div className="signIn">
             <h1>Weight Tracker</h1>
@@ -10,7 +11,7 @@ function SignIn() {
                     <div className="logo">
                         <img src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png" alt="" />
                     </div>
-                    <button>Sign In With Google</button>
+                    <button onClick={signInWithGoogle}>Sign In With Google</button>
                 </div>
             </div>
         </div>

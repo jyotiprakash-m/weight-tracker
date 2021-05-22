@@ -90,7 +90,7 @@
 .form{
     display:flex;
     justify-content:center;
-    margin-top: 50px;
+    margin-top: 60px;
     margin-bottom: 50px;
 }
 form{
@@ -116,6 +116,7 @@ form > button{
     display:flex;
     justify-content:center;
     align-items:center;
+    flex-direction: column;
 }
 .weight__item{
     width: 350px;

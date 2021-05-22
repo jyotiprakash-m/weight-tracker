@@ -1,15 +1,17 @@
 import React, { useState } from 'react'
 import Weight from './Weight';
 
-function Weights() {
+function Weights({ user }) {
     const [weight, setWeight] = useState("");
+    console.log(user);
+    console.log(user.displayName);
 
     return (
         <div className="weights">
             <div className="header">
                 <div className="header__left">
-                    <img src="https://cdn.pixabay.com/photo/2014/07/09/10/04/man-388104_1280.jpg" alt="" />
-                    <h4>jpmohanta32@gmail.com</h4>
+                    <img src={user.photoURL} alt="" />
+                    <h4>{user.displayName}</h4>
                 </div>
                 <div className="header__right">
                     <button>Sign Out</button>
@@ -22,6 +24,12 @@ function Weights() {
                 </form>
             </div>
             <div className="allWeights">
+                <Weight />
+                <Weight />
+                <Weight />
+                <Weight />
+                <Weight />
+                <Weight />
                 <Weight />
             </div>
         </div>
