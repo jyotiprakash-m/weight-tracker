@@ -1,14 +1,16 @@
 import React from 'react'
+import moment from 'moment'
 
-function Weight() {
+function Weight({ id, text, createdAt, weightRef }) {
+    const onDeleteWeight = (id) => weightRef.doc(id).delete();
     return (
-        <div className="weight">
+        <div key={id} className="weight">
             <div className="weight__item">
                 <div className="weight__ItemUp">
-                    <p>1 hour ago</p>
-                    <button>Delete</button>
+                    <p>{moment(createdAt?.toDate()).calendar()}</p>
+                    <button onClick={() => onDeleteWeight(id)}>Delete</button>
                 </div>
-                <h1>56.5 kg</h1>
+                <h1>{text} Kg</h1>
             </div>
         </div>
     )
