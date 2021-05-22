@@ -102,6 +102,7 @@ form > input{
     width:300px;
     padding: 0 5px;
     font-size: 18px;
+ 
 }
 
 form > button{
@@ -146,7 +147,7 @@ form > button{
 
 @media screen and (max-width: 600px) {
     .weights{
-        margin: 0 3vh;
+        margin: 0 5vh;
     }
     form > input{
         width: 250px;
@@ -162,7 +163,7 @@ form > button{
 }
 @media screen and (max-width: 400px) {
       .weight__item{
-          width: 310px;
+          width: 320px;
       }
       form > input{
         width: 230px;
@@ -174,6 +175,9 @@ form > button{
     
     form > button{
         height: 40px;
+    }
+    .weights{
+        margin: 0 2vh;
     }
 
   }
