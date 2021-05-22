@@ -98,17 +98,21 @@ form{
     gap: 10px;
 }
 form > input{
-    height: 35px;
+    height: 37px;
     width:300px;
     padding: 0 5px;
     font-size: 18px;
 }
 
 form > button{
-    height: 35px;
+    height: 37px;
+    border: none;
     padding:5px 10px;
-    border: 1px solid #4081ec;
     cursor: pointer;
+    font-weight: 600;
+    color: black;
+    background-color:#c7dafa;
+    border-radius:3px;
 }
 
 /* Weight styling */
@@ -131,9 +135,45 @@ form > button{
     align-items:center;
 }
 .weight__ItemUp > button{
-    padding: 3px 8px;
+    padding: 5px 10px;
     border: none;
     background-color:rgb(241, 45, 45);
     color: white;
     cursor: pointer;
 }
+
+/* Responsive */
+
+@media screen and (max-width: 600px) {
+    .weights{
+        margin: 0 3vh;
+    }
+    form > input{
+        width: 250px;
+    }
+    .form{
+        margin-top: 70px;
+        position: sticky;
+        top:5px;
+    }
+    .header__right > button{
+        font-size:16px;
+    }
+}
+@media screen and (max-width: 400px) {
+      .weight__item{
+          width: 310px;
+      }
+      form > input{
+        width: 230px;
+    }
+    form > input{
+        height: 40px;
+
+    }
+    
+    form > button{
+        height: 40px;
+    }
+
+  }
